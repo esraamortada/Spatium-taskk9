@@ -122,7 +122,7 @@ a{
         position: absolute;
         
         top: 70px;
-        right: 10px;
+        right: 20px;
         border-radius: 5px;
         width: 200px;
         
@@ -195,7 +195,7 @@ a{
         position: absolute;
         
         top: 70px;
-        right: 10px;
+        right: 20px;
         border-radius: 5px;
         width: 200px;
         
@@ -269,7 +269,7 @@ a{
         position: absolute;
         
         top: 70px;
-        right: 10px;
+        right: 20px;
         border-radius: 5px;
         width: 200px;
         
@@ -612,7 +612,7 @@ border: 1px solid rgb(247, 243, 243);
     row-gap: 50px;
 }
 .img{
-    width: 23%;
+    width: 25%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -627,7 +627,9 @@ border: 1px solid rgb(247, 243, 243);
 }
 .popular-container{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    column-gap: 32px;
 }
 .popular-header{
     display: flex;
@@ -669,12 +671,14 @@ border: 1px solid rgb(247, 243, 243);
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .popular-container{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+     column-gap: 32px;
         row-gap: 32px;
     }
     .img{
-        width: 80%;
+        width: 40%;
     }
 }
 @media  screen and (max-width: 600px){
@@ -697,7 +701,7 @@ border: 1px solid rgb(247, 243, 243);
 
 .talanted{
     background-color: rgb(211, 208, 208);
-    padding: 100px 0px 0px;
+    padding: 70px 0px 0px;
     display: flex;
     flex-direction: column;
     /* row-gap: 32px; */
@@ -709,7 +713,7 @@ border: 1px solid rgb(247, 243, 243);
     display: flex;
 
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 26px;
    
 }
 .talanted-header{
@@ -768,46 +772,53 @@ width: 100%;
         
        
     }
+    .talanted-header-text h2 {
+        font-size: 29px;
+    }
   
 }
 @media  screen and (max-width: 992px) and (min-width:786px){
 
 
-   
     .img-inner{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         row-gap: 32px;
     }
 
 
+  
 
     .talanted-img{
-        width: 80%;
-        margin: auto;
+        width: 45%;
+        
        
     }
-  
+    .talanted-header-text h2 {
+        font-size: 29px;
+    }
     
 
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
 
-
-   
     .img-inner{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         row-gap: 32px;
     }
 
 
+  
+
     .talanted-img{
-        width: 80%;
-        margin: auto;
+        width: 45%;
+        
        
     }
-  
+    .talanted-header-text h2 {
+        font-size: 29px;
+    }
     
  
 
@@ -826,6 +837,9 @@ width: 100%;
         width: 80%;
         margin: auto;
        
+    }
+    .talanted-header-text h2 {
+        font-size: 29px;
     }
 }
 
@@ -972,7 +986,7 @@ font-size: 25px;
     display: flex;
     flex-direction: column;
     row-gap: 26px;
-    width: 80%;
+    width: 500px;
     margin: auto;
 }
 .qestion{
@@ -1136,6 +1150,9 @@ font-size: 25px;
         width: 100%;
     }
     .backup-text-container{
+        width: 100%;
+    }
+    .list-container{
         width: 100%;
     }
 
